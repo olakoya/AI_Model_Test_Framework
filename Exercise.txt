@@ -1,6 +1,6 @@
-Absolutely, Ola 💪🏾 — **PyCharm** is *perfect* for building and running an AI model testing framework!
+This a Prototype Practice AI Model Project - QA Sandbox
 
-As a QA Engineer, I prefer PyCharm because it gives you an all-in-one environment for (Data Scientists preference too):
+As a QA Engineer, I prefer to use PyCharm because it gives you an all-in-one environment for (Data Scientists preference too):
 ✅ Writing Python scripts (tests, data validation, ML logic)
 ✅ Running tests via `pytest` or `unittest`
 ✅ Viewing logs and reports
