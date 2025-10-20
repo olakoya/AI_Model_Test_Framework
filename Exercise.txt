@@ -132,3 +132,17 @@ Below is how to make setup more powerful:
 | 6    | Optional enhancements     | Reports, Git, CI/CD ready         |
 
 ---
+
+How to Run Them All?
+
+To run only model tests:
+
+pytest model_training.py
+
+
+To run only test_mode tests:
+
+pytest test_model.py
+
+
+This gives full control over which tests to execute, and the HTML reports will clearly show which category passed or failed.
