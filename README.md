@@ -1,0 +1,135 @@
+
+Absolutely, Ola 💪🏾 — **PyCharm** is *perfect* for building and running an AI model testing framework!
+
+As a QA Engineer, I prefer PyCharm because it gives you an all-in-one environment for (Data Scientists preference too):
+✅ Writing Python scripts (tests, data validation, ML logic)
+✅ Running tests via `pytest` or `unittest`
+✅ Viewing logs and reports
+✅ Managing virtual environments
+✅ Integrating Git/GitHub for version control
+
+Below is step-by-step to set it up smoothly 👇🏾
+
+---
+
+## 🧩 1. Create QA Testing Project in PyCharm
+
+### 🪜 Steps
+
+1. **Open PyCharm → New Project**
+   * Naming it:
+     `AI_Model_Test_Framework`
+
+2. **Interpreter**
+   * Choose **New Virtual Environment (venv)** → keep Python 3.x
+
+3. Once the project opens, open the **Terminal** in PyCharm and run:
+   ```bash
+   pip install pytest scikit-learn pandas numpy evidently joblib
+   ```
+
+---
+
+## 🧠 2. Create Folder Structure
+
+In the **Project Explorer**, create below structure:
+
+```
+AI_Model_Test_Framework/
+│
+├── model_training.py
+├── test_model.py
+└── requirements.txt
+```
+
+💡 *(Project2 (AI_Test_framework) contains folders like `data/`, `reports/`, or `utils/` as the framework grows.)*
+
+---
+
+## ⚙️ 3. Add Model Training File
+
+Then run it (right-click → **Run 'model_training'**).
+This will save `loan_model.pkl` in project root.
+
+---
+
+## 🧪 4. Create the Test File
+
+Create `test_model.py` and paste the automated tests (functional, performance, bias, drift).
+
+Each test is written as a function starting with `test_`, so PyCharm + pytest will automatically detect and run them.
+
+---
+
+## ▶️ 5. Run the Tests
+
+You can run tests in two ways:
+
+### ✅ Option A — via PyCharm GUI
+
+1. Right-click on the `test_model.py` file
+2. Choose **Run 'pytest in test_model'**
+
+A clean green/red report appears inside PyCharm.
+
+### ✅ Option B — via Terminal
+
+Run:
+
+```bash
+pytest -v
+```
+
+You’ll get detailed logs of all your test cases.
+
+---
+
+## 🧾 6. (Optional) Add a Requirements File
+
+In your `requirements.txt`, add:
+
+```
+pytest
+pandas
+numpy
+scikit-learn
+evidently
+joblib
+```
+
+This helps others (or CI/CD) install dependencies easily using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ⚡ 7. PyCharm QA Tips
+
+Below is how to make setup more powerful:
+
+* 🔍 **Use pytest plugins** like `pytest-html` for generating test reports:
+
+  ```bash
+  pip install pytest-html
+  pytest --html=report.html
+  ```
+* 🧠 **Use Breakpoints** to debug model logic or inspect predictions.
+* 🧩 **Use Git integration** in PyCharm to version-control your framework.
+* 🚀 **Add Run Configurations** to automatically run tests or model training in one click.
+
+---
+
+## 🧰 Summary
+
+| Step | Action                    | Outcome                           |
+| ---- | ------------------------- | --------------------------------- |
+| 1    | Create project in PyCharm | Isolated testing workspace        |
+| 2    | Install dependencies      | Required libraries for AI testing |
+| 3    | Add `model_training.py`   | Build and save model              |
+| 4    | Add `test_model.py`       | Define QA tests                   |
+| 5    | Run pytest                | Execute and validate model        |
+| 6    | Optional enhancements     | Reports, Git, CI/CD ready         |
+
+---
